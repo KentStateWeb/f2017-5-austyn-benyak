@@ -1,5 +1,15 @@
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+
 body {
   max-width: 1000px;
+  position: relative;
+   margin: 0;
+   padding-bottom: 6rem;
+   min-height: 100%;
   font-family:'PT Sans Caption', sans-serif;
 }
 
@@ -7,7 +17,7 @@ div, section, main, aside, header, footer {
 }
 
 .nav-trigger {
-  padding: 1em;
+  padding: 2em;
   cursor: pointer;
   z-index: 200;
   display: inline-block;
@@ -38,7 +48,7 @@ nav {
   width: 100%;
   position: fixed;
   z-index: 100;
-  top: -100%;
+  top: -115%;
   height: 100vh;
   transition: 300ms;
 }
@@ -93,52 +103,166 @@ nav.in li {
   text-align: left;
   top: 50%;
   margin-top: -8px;
+  margin-left: .5em;
 }
 
 
-.big-header{
-  font-size: 48px;
+.big-header {
+  font-size: 30px;
   font-weight: bold;
   letter-spacing: .03em;
   line-height: 1.1;
-  margin-left: .5em;
-  margin-right: .5em;
-  padding-top: 1.5em;
+  margin-left: 1em;
+  margin-right: 1em;
 }
+
+@media screen and (min-width: 600px)
+  {.big-header {
+    margin-left: 6em;
+    font-size: 42px;
+  }
+	}
+
 
 h1{
   font-size: 30px;
-  margin-left: .75em;
+  margin-left: 1em;
   padding-top: 1em;
   padding-bottom: 3em;
 }
 
+@media screen and (min-width: 700px)
+  {h1 {
+    margin-left: 8em;
+  }
+  }
+
 .mobile-logo {
-  margin-top: -2.8em;
+  margin-top: -2.3em;
   margin-left: .5em;
-  height:100px;
+  height: 100px;
   width: 100px;
   -o-object-fit: contain;
   display: inline-block;
 }
 
+@media screen and (min-width: 600px)
+  {.mobile-logo {
+    margin-left: 14em;
+  }
+	}
+
+  .desktop-logo {
+    height: 450px;
+    width: 450px;
+    display: inline-block;
+    margin-left: 10em;
+    margin-top: 1em;
+    margin-bottom: -18em;
+  }
+
+  @media screen and (max-width: 800px)
+    {.desktop-logo {
+      display: none;
+    }
+  	}
+
+
 .container {
+  padding-top: 4em;
+  padding-bottom: 5em;
 }
 
 .item {
   background-image: url("photos/honeymoon.jpg");
   background-position: center no-repeat;
   background-size: cover;
-  min-height: 300px;
+  min-height: 200px;
+
+}
+
+@media screen and (min-width: 900px)
+  {.container {
+    margin-left: 8em;
+  }
+	}
+
+  @media screen and (min-width: 600px)
+    {.item {
+    min-height: 400px;
+    min-width: 800px;
+    }
+  	}
+
+.container2 {
+  padding-top: 5em;
+  padding-bottom: 1em;
+}
+
+.item2 {
+  background-image: url("photos/tape.jpg");
+  background-position: center no-repeat;
+  background-size: cover;
+  min-height: 200px;
   margin-left: -1em;
   margin-right: -1em;
 }
 
+@media screen and (min-width: 600px)
+  {.container2 {
+    margin-left: 16em;
+  }
+	}
+
+  @media screen and (min-width: 600px)
+    {.item2 {
+    min-height: 300px;
+    min-width: 500px;
+    }
+  	}
+
+
+p {
+  font-size: 14px;
+  margin-left: 2em;
+  width: 250px;
+  padding-bottom: 2em;
+}
+
+@media screen and (min-width: 600px)
+  {p {
+    margin-left: 13em;
+    font-size: 18px;
+  }
+	}
 
 h2 {
   font-size: 20px;
-  margin-left: .75em;
+  margin-left: 1.5em;
+  margin-right: 2em;
+  padding-bottom: .25em;
 }
+
+@media screen and (min-width: 600px)
+  {h2 {
+    margin-left: 8.5em;
+    font-size: 28px;
+  }
+	}
+
+hr {
+  border: none;
+  height: 3px;
+  background-color: black;
+  margin: 2em;
+  margin-top: 8em;
+}
+
+@media screen and (min-width: 600px)
+  {hr {
+    margin-left: 14em;
+  }
+	}
 
 .news {
   font-size: 14px;
@@ -168,7 +292,7 @@ h2 {
   font-weight: bold;
   line-height: .5;
   padding-bottom: 4em;
-  margin-left: 1em;
+  margin-left: .1em;
 }
 
 img {
@@ -188,49 +312,74 @@ ul {
   line-height: 1.8;
 }
 
+
 .contact {
-  font-size: 20px;
+  font-size: 15px;
   font-weight: bold;
   letter-spacing: .02em;
   margin-left: -.5em;
-  padding-top: 3em;
+  padding-bottom: 2em;
   }
 
+
 .social {
- font-size: 20px;
+ font-size: 15px;
  font-weight: bold;
  line-height: 2;
  letter-spacing: .02em;
  margin-left: -.5em;
- padding-top: 3em;
- padding-bottom: 2em;
 }
 
-
-.shows {
-    border-bottom: 3px solid black;
-    font-size: 15px;
-    font-weight: bold;
-    line-height: 1.75;
-    margin-left: -1.5em;
+@media screen and (min-width: 600px)
+  {.social {
+    margin-left: 6em;
   }
+  }
+
+@media screen and (min-width: 600px)
+  {.connect {
+    display: flex;
+    margin-left: 11em;
+    font-size: 18px;
+  }
+  }
+
 
 table {
   border-collapse: collapse;
+  margin: 2em;
 }
+
+@media screen and (min-width: 700px)
+  {table {
+    margin-left: 15em;
+    max-width: 60%;
+  }
+  }
 
 tr {
   border-bottom: 3px solid black;
   text-align: left;
+  font-size: 15px;
   font-weight: bold;
-  font-size: 12px;
+  line-height: 1.75;
 }
 
+@media screen and (min-width: 700px)
+  {tr {
+    font-size: 18px;
+  }
+  }
+
 td {
-  line-height: 1;
-  padding-bottom: 1.5em;
-  padding-top: 1.5em;
+  display: block;
 }
+
+@media screen and (min-width: 800px)
+  {td {
+    display: table-cell;
+  }
+  }
 
 a {
   text-decoration: none;
@@ -245,21 +394,27 @@ a:hover {
 }
 
 .album-art {
+
   border: 1px solid lightgrey;
-  width: 20em;
-  height: 20em;
+  max-width: 100%;
   margin-left: -1.5em;
 }
 
 
 .footer {
-  font-size: 9px;
-  font-weight: bold;
-  letter-spacing: .05em;
-  position: fixed;
+  position: absolute;
   right: 0;
   bottom: 0;
   left: 0;
   padding: 1rem;
   text-align: left;
+  font-size: 9px;
+  letter-spacing: .15em;
+  font-weight: bold;
 }
+
+@media screen and (min-width: 600px)
+  {.footer {
+    margin-left: 20em;
+  }
+  }
