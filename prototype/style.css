@@ -47,7 +47,7 @@ nav {
   width: 100%;
   position: fixed;
   z-index: 100;
-  top: -100%;
+  top: -115%;
   height: 100vh;
 }
 
