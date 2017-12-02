@@ -14,8 +14,13 @@ body {
   font-family:'PT Sans Caption', sans-serif;
 }
 
+::selection {
+  background: orange;
+}
+
 div, section, main, aside, header, footer {
 }
+
 
 .nav-trigger {
   padding: 1em;
@@ -23,6 +28,12 @@ div, section, main, aside, header, footer {
   display: inline-block;
   float: right;
 }
+
+@media screen and (min-width: 900px)
+  {.nav-trigger {
+    display: none;
+  }
+	}
 
 .nav-trigger:after {
   content:"menu";
@@ -54,6 +65,7 @@ nav {
   top: -115%;
   height: 100vh;
 }
+
 
 nav.out {
   pointer-events: none;
@@ -106,6 +118,20 @@ nav.in li {
   margin-top: 0;
 }
 
+.two {
+  line-height: 3;
+  position: fixed;
+  top: 10em;
+  left: 4em;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 900px)
+  {.two {
+    display: none;
+  }
+	}
+
 
 .big-header {
   font-size: 30px;
@@ -123,19 +149,50 @@ nav.in li {
   }
 	}
 
+  @media screen and (min-width: 900px)
+    {.big-header {
+      margin-left: 8em;
+      font-size: 52px;
+    }
+  	}
+
+    @media screen and (min-width: 1300px)
+      {.big-header {
+        margin-left: 9em;
+        font-size: 58px;
+        margin-right: -5em;
+      }
+      }
+
+
+
 
 h1{
-  font-size: 30px;
-  margin-left: 1em;
+  font-size: 23px;
+  margin-left: 1.5em;
   padding-top: 1em;
   padding-bottom: 3em;
 }
 
-@media screen and (min-width: 700px)
+@media screen and (min-width: 600px)
   {h1 {
-    margin-left: 8em;
+    margin-left: 10.25em;
   }
   }
+
+  @media screen and (min-width: 900px)
+    {h1 {
+      margin-left: 18em;
+      margin-top: -16.5em;
+    }
+    }
+
+    @media screen and (min-width: 1300px)
+      {h1 {
+        margin-left: 22.25em;
+        margin-top: -16.5em;
+      }
+      }
 
 .mobile-logo {
   margin-top: -2.3em;
@@ -152,29 +209,39 @@ h1{
   }
 	}
 
+  @media screen and (min-width: 900px)
+    {.mobile-logo {
+      display: none;
+    }
+  	}
+
   .desktop-logo {
     height: 450px;
     width: 450px;
     display: inline-block;
-    margin-left: 10em;
+    margin-left: 26em;
     margin-top: 1em;
-    margin-bottom: -18em;
   }
 
-  @media screen and (max-width: 800px)
+  @media screen and (max-width: 900px)
     {.desktop-logo {
       display: none;
     }
   	}
 
+    @media screen and (min-width: 1300px)
+      {.desktop-logo {
+        margin-left: 32em;
+      }
+    	}
 
 .container {
-  padding-top: 4em;
-  padding-bottom: 5em;
+  padding-top: 2em;
+  padding-bottom: 4em;
 }
 
 .item {
-  background-image: url("photos/honeymoon.jpg");
+  background-image: url("photos/honeymoon_benjamin_bartling.jpg");
   background-position: center no-repeat;
   background-size: cover;
   min-height: 200px;
@@ -183,16 +250,39 @@ h1{
 
 @media screen and (min-width: 900px)
   {.container {
-    margin-left: 8em;
+    margin-top: -21em;
+    margin-left: 11em;
+    min-width: 100%;
   }
 	}
 
-  @media screen and (min-width: 600px)
-    {.item {
-    min-height: 400px;
-    min-width: 800px;
+  @media screen and (min-width: 1200px)
+    {.container {
+      margin-top: -21em;
+      margin-left: 11em;
+      min-width: 125%;
     }
   	}
+
+  @media screen and (min-width: 450px)
+    {.item {
+    min-height: 400px;
+    }
+  	}
+
+    @media screen and (min-width: 900px)
+      {.item {
+      min-height: 500px;
+      }
+      }
+
+      @media screen and (min-width: 1200px)
+        {.item {
+        min-height: 600px;
+        }
+        }
+
+
 
 .container2 {
   padding-top: 5em;
@@ -214,6 +304,18 @@ h1{
   }
 	}
 
+  @media screen and (min-width: 1200px)
+    {.container2 {
+      margin-left: 70em;
+    }
+  	}
+
+    @media screen and (min-width: 900px)
+      {.container2 {
+        margin-left: 27em;
+      }
+      }
+
   @media screen and (min-width: 600px)
     {.item2 {
     min-height: 300px;
@@ -221,18 +323,27 @@ h1{
     }
   	}
 
+    @media screen and (min-width: 900px)
+      {.item2 {
+      min-height: 500px;
+      min-width: 600px;
+      }
+    	}
+
 
 p {
   font-size: 14px;
   margin-left: 2em;
-  width: 250px;
+  width: 300px;
   padding-bottom: 2em;
+  font-weight: bold;
+  line-height: 1.5;
 }
 
 @media screen and (min-width: 600px)
   {p {
-    margin-left: 13em;
-    font-size: 18px;
+    margin-left: 15em;
+    font-size: 16px;
   }
 	}
 
@@ -258,11 +369,24 @@ hr {
   margin-top: 8em;
 }
 
+
 @media screen and (min-width: 600px)
   {hr {
-    margin-left: 14em;
+    margin-left: 15em;
   }
 	}
+
+  @media screen and (min-width: 900px)
+    {hr {
+        margin-left: 26em;
+    }
+    }
+
+    @media screen and (min-width: 1300px)
+      {hr {
+          margin-left: 32em;
+      }
+      }
 
 .news {
   font-size: 14px;
@@ -280,50 +404,71 @@ hr {
 }
 
 .tracks {
-  font-size: .65em;
+  font-size: 14px;
   list-style-type: none;
   padding-bottom: -1em;
   padding-bottom: 2em;
 	margin-left: -1.75em;
+  font-weight: bold;
 }
 
+
 .buy {
-  font-size: 15px;
+  font-size: 14px;
   font-weight: bold;
   line-height: .5;
   padding-bottom: 4em;
   margin-left: .1em;
 }
 
+
 img {
   max-width: 100%;
 }
 
-.tracks {
-  font-size: 15px;
-  font-weight: bold;
-  line-height: .5;
-  }
 
 ul {
   list-style: none;
-  font-size: 15px;
-  /*font-weight: bold;*/
+  font-size: 14px;
+  font-weight: bold;
   line-height: 1.8;
 }
 
 
+
+
 .contact {
-  font-size: 15px;
+  font-size: 14px;
   font-weight: bold;
   letter-spacing: .02em;
   margin-left: -.5em;
   padding-bottom: 2em;
   }
 
+  @media screen and (min-width: 600px)
+    {.contact {
+      font-size: 16px;
+      margin-left: 1.5em;
+    }
+    }
+
+    @media screen and (min-width: 900px)
+      {.contact {
+        font-size: 16px;
+        margin-left: 11.5em;
+      }
+      }
+
+      @media screen and (min-width: 1300px)
+        {.contact {
+          font-size: 16px;
+          margin-left: 17.5em;
+        }
+        }
+
 
 .social {
- font-size: 15px;
+ font-size: 14px;
  font-weight: bold;
  line-height: 2;
  letter-spacing: .02em;
@@ -333,14 +478,14 @@ ul {
 @media screen and (min-width: 600px)
   {.social {
     margin-left: 6em;
+    font-size: 16px;
   }
   }
 
 @media screen and (min-width: 600px)
   {.connect {
     display: flex;
-    margin-left: 11em;
-    font-size: 18px;
+    margin-left: 12em;
   }
   }
 
@@ -350,17 +495,45 @@ table {
   margin: 2em;
 }
 
-@media screen and (min-width: 700px)
+@media screen and (min-width: 600px)
   {table {
     margin-left: 15em;
-    max-width: 60%;
+    max-width: 55%;
   }
   }
+
+  @media screen and (min-width: 700px)
+    {table {
+      margin-left: 15em;
+      max-width: 70%;
+    }
+    }
+
+    @media screen and (min-width: 900px)
+      {table {
+        margin-left: 26em;
+        max-width: 55%;
+      }
+      }
+
+      @media screen and (min-width: 1200px)
+        {table {
+          margin-left: 26em;
+          max-width: 75%;
+        }
+        }
+
+        @media screen and (min-width: 1300px)
+          {table {
+            margin-left: 32em;
+            max-width: 75%;
+          }
+          }
 
 tr {
   border-bottom: 3px solid black;
   text-align: left;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: bold;
   line-height: 1.75;
 }
@@ -375,7 +548,7 @@ td {
   display: block;
 }
 
-@media screen and (min-width: 800px)
+@media screen and (min-width: 1000px)
   {td {
     display: table-cell;
   }
@@ -392,6 +565,7 @@ a:hover {
   transition-duration: 0.3s;
   transition-timing-function: ease-out;
 }
+
 
 .album-art {
 
@@ -415,6 +589,18 @@ a:hover {
 
 @media screen and (min-width: 600px)
   {.footer {
-    margin-left: 20em;
+    margin-left: 24em;
   }
   }
+
+  @media screen and (min-width: 900px)
+    {.footer {
+      margin-left: 42em;
+    }
+    }
+
+    @media screen and (min-width: 1300px)
+      {.footer {
+        margin-left: 54em;
+      }
+      }
