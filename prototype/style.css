@@ -14,11 +14,12 @@ body {
   font-family:'PT Sans Caption', sans-serif;
 }
 
-::selection {
-  background: orange;
-}
 
 div, section, main, aside, header, footer {
+}
+
+::selection {
+  background: orange;
 }
 
 
@@ -156,15 +157,6 @@ nav.in li {
     }
   	}
 
-    @media screen and (min-width: 1300px)
-      {.big-header {
-        margin-left: 9em;
-        font-size: 58px;
-        margin-right: -5em;
-      }
-      }
-
-
 
 
 h1{
@@ -176,7 +168,7 @@ h1{
 
 @media screen and (min-width: 600px)
   {h1 {
-    margin-left: 10.25em;
+    margin-left: 11.25em;
   }
   }
 
@@ -187,12 +179,6 @@ h1{
     }
     }
 
-    @media screen and (min-width: 1300px)
-      {h1 {
-        margin-left: 22.25em;
-        margin-top: -16.5em;
-      }
-      }
 
 .mobile-logo {
   margin-top: -2.3em;
@@ -229,11 +215,6 @@ h1{
     }
   	}
 
-    @media screen and (min-width: 1300px)
-      {.desktop-logo {
-        margin-left: 32em;
-      }
-    	}
 
 .container {
   padding-top: 2em;
@@ -282,84 +263,75 @@ h1{
         }
         }
 
-
-
-.container2 {
-  padding-top: 5em;
-  padding-bottom: 1em;
+.news-block {
+  display: flex;
 }
 
-.item2 {
-  background-image: url("photos/tape.jpg");
-  background-position: center no-repeat;
-  background-size: cover;
-  min-height: 200px;
-  margin-left: -1em;
-  margin-right: -1em;
-}
 
-@media screen and (min-width: 600px)
-  {.container2 {
-    margin-left: 16em;
+.news-photo {
+  max-width: 100%;
+  line-height: 0;
   }
-	}
-
-  @media screen and (min-width: 1200px)
-    {.container2 {
-      margin-left: 70em;
-    }
-  	}
-
-    @media screen and (min-width: 900px)
-      {.container2 {
-        margin-left: 27em;
-      }
-      }
 
   @media screen and (min-width: 600px)
-    {.item2 {
-    min-height: 300px;
-    min-width: 500px;
-    }
-  	}
+    {.news-photo {
+      margin-left: 14em;
+      max-width: 50%;
+    }}
 
     @media screen and (min-width: 900px)
-      {.item2 {
-      min-height: 500px;
-      min-width: 600px;
-      }
-    	}
+      {.news-photo {
+        margin-left: 24em;
+        max-width: 50%;
+      }}
+
+
 
 
 p {
   font-size: 14px;
-  margin-left: 2em;
+  margin-left: 2.75em;
   width: 300px;
-  padding-bottom: 2em;
   font-weight: bold;
   line-height: 1.5;
 }
 
 @media screen and (min-width: 600px)
   {p {
-    margin-left: 15em;
+    margin-left: 16.5em;
     font-size: 16px;
   }
 	}
 
+  @media screen and (min-width: 900px)
+    {p {
+      margin-left: 26.5em;
+      font-size: 16px;
+      width: 450px;
+    }
+  	}
+
 h2 {
   font-size: 20px;
-  margin-left: 1.5em;
+  margin-left: 2em;
   margin-right: 2em;
   padding-bottom: .25em;
 }
 
 @media screen and (min-width: 600px)
   {h2 {
-    margin-left: 8.5em;
+    margin-left: 9.5em;
     font-size: 28px;
   }
 	}
+
+  @media screen and (min-width: 900px)
+    {h2 {
+      margin-left: 15em;
+      font-size: 28px;
+    }
+  	}
+
 
 hr {
   border: none;
@@ -372,7 +344,7 @@ hr {
 
 @media screen and (min-width: 600px)
   {hr {
-    margin-left: 15em;
+    margin-left: 16em;
   }
 	}
 
@@ -381,46 +353,48 @@ hr {
         margin-left: 26em;
     }
     }
-
-    @media screen and (min-width: 1300px)
-      {hr {
-          margin-left: 32em;
-      }
-      }
-
-.news {
-  font-size: 14px;
-  font-weight: bold;
-  line-height: 1.75;
-  width: 20em;
-  margin-left: 1.25em;
-}
-
 .date {
   font-size: 9px;
   font-weight: bold;
-  padding-bottom: 3em;
-  margin-left: 1.8em;
+  margin-left: 4.25em;
 }
+
+@media screen and (min-width: 600px)
+  {.date {
+    font-size: 11px;
+    margin-left: 24em;
+  }
+  }
+
+  @media screen and (min-width: 900px)
+    {.date {
+      font-size: 11px;
+      margin-left: 38.5em;
+    }
+    }
 
 .tracks {
   font-size: 14px;
   list-style-type: none;
   padding-bottom: -1em;
   padding-bottom: 2em;
-	margin-left: -1.75em;
+	margin-left: 0em;
   font-weight: bold;
 }
 
+@media screen and (min-width: 600px)
+  {.tracks {
+    font-size: 16px;
+    margin-left: 14em;
+  }
+  }
 
-.buy {
-  font-size: 14px;
-  font-weight: bold;
-  line-height: .5;
-  padding-bottom: 4em;
-  margin-left: .1em;
-}
-
+  @media screen and (min-width: 900px)
+    {.tracks {
+      font-size: 16px;
+      margin-left: 24em;
+    }
+    }
 
 img {
   max-width: 100%;
@@ -459,14 +433,6 @@ ul {
       }
       }
 
-      @media screen and (min-width: 1300px)
-        {.contact {
-          font-size: 16px;
-          margin-left: 17.5em;
-        }
-        }
-
-
 .social {
  font-size: 14px;
  font-weight: bold;
@@ -497,17 +463,12 @@ table {
 
 @media screen and (min-width: 600px)
   {table {
-    margin-left: 15em;
+    margin-left: 16em;
     max-width: 55%;
   }
   }
 
-  @media screen and (min-width: 700px)
-    {table {
-      margin-left: 15em;
-      max-width: 70%;
-    }
-    }
+
 
     @media screen and (min-width: 900px)
       {table {
@@ -523,12 +484,7 @@ table {
         }
         }
 
-        @media screen and (min-width: 1300px)
-          {table {
-            margin-left: 32em;
-            max-width: 75%;
-          }
-          }
+
 
 tr {
   border-bottom: 3px solid black;
@@ -568,11 +524,24 @@ a:hover {
 
 
 .album-art {
-
   border: 1px solid lightgrey;
   max-width: 100%;
-  margin-left: -1.5em;
+  line-height: 0;
 }
+
+@media screen and (min-width: 600px)
+  {.album-art {
+    margin-left: 14em;
+  }}
+
+  @media screen and (min-width: 900px)
+    {.album-art {
+      margin-left: 24em;
+    }}
+
+
+
+
 
 
 .footer {
@@ -585,22 +554,17 @@ a:hover {
   font-size: 9px;
   letter-spacing: .15em;
   font-weight: bold;
+  margin-left: 1em;
 }
 
 @media screen and (min-width: 600px)
   {.footer {
-    margin-left: 24em;
+    margin-left: 26em;
   }
   }
 
   @media screen and (min-width: 900px)
     {.footer {
-      margin-left: 42em;
+      margin-left: 44em;
     }
     }
-
-    @media screen and (min-width: 1300px)
-      {.footer {
-        margin-left: 54em;
-      }
-      }
