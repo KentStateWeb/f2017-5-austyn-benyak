@@ -219,18 +219,6 @@ h1{
   	}
 
 
-.container {
-  padding-top: 2em;
-  padding-bottom: 4em;
-}
-
-.item {
-  background-image: url("photos/honeymoon_benjamin_bartling.jpg");
-  background-position: center no-repeat;
-  background-size: cover;
-  min-height: 200px;
-
-}
 
 @media screen and (min-width: 900px)
   {.container {
@@ -266,27 +254,7 @@ h1{
         }
         }
 
-.news-block {
-  display: flex;
-}
 
-
-.news-photo {
-  max-width: 100%;
-  line-height: 0;
-  }
-
-  @media screen and (min-width: 600px)
-    {.news-photo {
-      margin-left: 14em;
-      max-width: 50%;
-    }}
-
-    @media screen and (min-width: 900px)
-      {.news-photo {
-        margin-left: 24em;
-        max-width: 50%;
-      }}
 
 
 
