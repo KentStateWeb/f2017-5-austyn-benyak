@@ -101,6 +101,12 @@ nav li {
   font-size: 18px;
 }
 
+@media screen and (min-width: 600px)
+  {nav li {
+    font-size: 36px;
+  }
+	}
+
 nav.in {
     top: 0;
     opacity: 1;
@@ -148,6 +154,8 @@ nav.in li {
   -o-object-fit: contain;
   display: inline-block;
 }
+
+
 
 @media screen and (min-width: 600px)
   {.header-logo {
