@@ -212,15 +212,13 @@ h1{
 
 
 h2 {
-font-size: 14px;
+font-size: 18px;
 letter-spacing: 2px;
-font-family: 'PT Mono', monospace;
-font-weight: bold;
+font-family: 'PT Sans Caption', sans-serif;
 }
 
 @media screen and (min-width: 1000px)
   {h2{
-    font-size: 14px;
     max-width: 600px;
   }
   }
@@ -238,8 +236,7 @@ font-weight: bold;
   }
 
 h4 {
-font-size: 10px;
-font-weight: bold;
+font-size: 12px;
 font-family: 'PT Mono', monospace;
 }
 
@@ -378,8 +375,8 @@ a:hover {
 }
 
 .footer-logo {
-  max-width: 125px;
-  padding-top: 200px;
+  max-width: 150px;
+  padding-top: 100px;
 }
 
 @media screen and (min-width: 600px)
