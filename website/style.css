@@ -12,7 +12,7 @@ body {
   margin: 0;
   padding-bottom: 6rem;
   min-height: 100%;
-  font-family:'PT Sans Caption', sans-serif;
+  font-family: 'Cantarell', sans-serif;
 }
 
 div, section, main, aside, header, footer {
@@ -30,11 +30,14 @@ div, section, main, aside, header, footer {
   z-index: 200;
   display: inline-block;
   float: right;
+  font-size: 18px;
+  letter-spacing: 1px;
 }
 
 @media screen and (min-width: 1200px)
   {.nav-trigger {
-    padding-right: 200px;
+    padding-right: 300px;
+    font-size: 20px;
   }
 	}
 
@@ -103,7 +106,7 @@ nav li {
 
 @media screen and (min-width: 600px)
   {nav li {
-    font-size: 36px;
+    font-size: 32px;
   }
 	}
 
@@ -191,6 +194,7 @@ main {
 h1{
   font-size: 30px;
   max-width: 300px;
+  line-height: 1.15;
 }
 
 @media screen and (min-width: 600px)
@@ -208,21 +212,23 @@ h1{
 
 
 h2 {
-font-family: 'PT Mono', monospace;
 font-size: 14px;
+letter-spacing: 2px;
+font-family: 'PT Mono', monospace;
 font-weight: bold;
 }
 
 @media screen and (min-width: 1000px)
   {h2{
-    font-size: 16px;
+    font-size: 14px;
     max-width: 600px;
   }
   }
 
 h3 {
 font-size: 24px;
-letter-spacing: 4px;
+letter-spacing: 3px;
+font-weight: bold;
 }
 
 @media screen and (min-width: 1200px)
@@ -232,20 +238,80 @@ letter-spacing: 4px;
   }
 
 h4 {
-font-size: 8px;
+font-size: 10px;
 font-weight: bold;
 font-family: 'PT Mono', monospace;
 }
 
-p {
-font-size: 14px;
+h5 {
+font-size: 20px;
 line-height: 1.5;
 width: 250px;
+letter-spacing: 1px;
 }
+
+@media screen and (min-width: 500px)
+  {h5{
+    width: 350px;
+  }
+  }
+
+  @media screen and (min-width: 900px)
+    {h5{
+      width: 500px;
+      font-size: 24px;
+    }
+    }
+
+p {
+font-family: 'PT Sans Caption', sans-serif;
+font-size: 14px;
+line-height: 1.75;
+width: 250px;
+}
+
+@media screen and (min-width: 500px)
+  {P{
+    width: 350px;
+  }
+  }
+
+  @media screen and (min-width: 900px)
+    {P{
+      width: 500px;
+      font-size: 16px;
+    }
+    }
 
 img {
   max-width: 100%;
 }
+
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: -2px;
+	width: 100%;
+	height: 85%;
+}
+
+.album-art {
+  border: 1px solid #e6e6e6;
+  line-height: 0;
+}
+
+@media screen and (min-width: 900px)
+  {.album-art {
+    width: 50%;
+  }
+  }
+
 
 ul {
   list-style: none;
