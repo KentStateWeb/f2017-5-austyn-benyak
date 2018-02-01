@@ -260,6 +260,11 @@ letter-spacing: 1px;
     }
     }
 
+h6 {
+  font-family: Heave-Regular;
+  font-size: 30px;
+}
+
 p {
 font-family: 'PT Sans Caption', sans-serif;
 font-size: 14px;
