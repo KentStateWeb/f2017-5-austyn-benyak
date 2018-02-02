@@ -18,7 +18,14 @@ body {
 div, section, main, aside, header, footer {
 }
 
+@font-face {
+    font-family: 'heaveregular';
+    src: url('fonts/heave-regular-webfont.woff2') format('woff2'),
+         url('fonts/heave-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 
+}
 
 ::selection {
   background: orange;
@@ -261,7 +268,7 @@ letter-spacing: 1px;
     }
 
 h6 {
-  font-family: Heave-Regular;
+  font-family: 'heaveregular';
   font-size: 25px;
 }
 
