@@ -269,7 +269,14 @@ letter-spacing: 1px;
 
 h6 {
   font-family: 'heaveregular';
-  font-size: 25px;
+  font-size: 15px;
+  line-height: 1px;
+}
+
+h7 {
+  font-family: 'heaveregular';
+  font-size: 15vw;
+  line-height: 2px;
 }
 
 p {
