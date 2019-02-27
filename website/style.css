@@ -135,9 +135,9 @@ nav.in li {
 }
 
 .hero {
-  background-image: url(photos/honeymoon_tall.jpg);
+  background-image: url(photos/big_3_tall.jpg);
   height: 400px;
-  background-position: bottom;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   margin-top: -250px;
